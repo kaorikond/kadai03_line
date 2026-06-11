@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #d8e8f7; /* 薄いブルーの背景 */
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 24px;
+  }
+  
+  /* アプリ全体のコンテナ */
+  .chat-app {
+    width: 500px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 20px;
+  }
+  
+  /* チャット表示エリア（LINE風のトーク画面） */
+  .chat-output {
+    height: 350px;
+    overflow-y: auto;
+    background: #b7d7f0; /* トーク画面の背景（LINE風の青） */
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* メッセージごとの隙間 */
+  }
+  
+  /* 🟢 通常のメッセージ（職人からの報告） */
+  .msg-box {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    max-width: 85%;
+    align-self: flex-start; /* 左寄せ（職人側） */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .msg-header {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+  }
+  
+  .uname {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  
+  .meta-info {
+    font-size: 11px;
+    color: #666;
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 10px;
+  }
+  
+  .work-title {
+    font-size: 13px;
+    margin: 4px 0;
+    color: #444;
+  }
+  
+  /* ガントチャート風の進捗メーター */
+  .gantt-bar {
+    font-family: monospace; /* 四角（■）の幅を揃えるためのフォント設定 */
+    color: #06c755; /* LINEカラーの緑色にして目立たせる */
+    font-weight: bold;
+    margin: 6px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .user-text {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    word-break: break-all;
+  }
+  
+  /* システム自動通知の見た目 */
+  .msg-notice {
+    align-self: center; /* 画面の中央に配置 */
+    background-color: rgba(0, 0, 0, 0.25); /* 半透明のグレー */
+    color: white;
+    border-radius: 15px;
+    padding: 6px 14px;
+    font-size: 12px;
+    text-align: center;
+    max-width: 90%;
+  }
+  
+  .notice-text {
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  /* 入力エリアのスタイル（元のデザインを維持） */
+  .input-area input,
+  .input-area select,
+  .input-area textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .input-area textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  /* 送信ボタン（元のデザインを維持） */
+  button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background: #06c755;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #05b34c;
+  }
